@@ -1,1 +1,0 @@
-# bayazidsustami.github.io

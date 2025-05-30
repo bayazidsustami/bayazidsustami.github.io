@@ -1,28 +1,125 @@
 section.resume-section {
-  border-bottom: 1px solid $gray-300;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  border-bottom: 1px solid rgba($gray-300, 0.5);
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: $accent-gradient;
+    opacity: 0.3;
+  }
+
   .resume-item {
-    .resume-content {}
+    @extend .modern-card;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: $accent-gradient;
+    }
+
+    .resume-content {
+      h3 {
+        color: $primary;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+      }
+
+      .subheading {
+        color: $gray-600;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        line-height: 1.8;
+        color: $gray-700;
+      }
+    }
+
     .resume-date {
       min-width: none;
+
+      .text-primary {
+        background: $accent-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 600;
+        font-size: 1rem;
+      }
     }
   }
 }
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+
     .resume-item {
-      .resume-content {}
       .resume-date {
         min-width: 18rem;
       }
     }
   }
 }
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+  }
+}
+
+// Portfolio specific styles
+#portofolio .resume-item {
+  h3 {
+    background: $accent-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    li {
+      margin-bottom: 1rem;
+
+      &:first-child {
+        font-weight: 600;
+        color: $primary;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  a {
+    color: $primary;
+    text-decoration: none;
+    font-weight: 600;
+    transition: $transition-smooth;
+
+    &:hover {
+      color: $primary-blue-dark;
+      text-decoration: underline;
+    }
   }
 }

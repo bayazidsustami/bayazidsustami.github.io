@@ -1,8 +1,40 @@
 #sideNav {
+  background: linear-gradient(180deg, rgba($primary, 0.95) 0%, rgba($primary-blue-dark, 0.95) 100%);
+  backdrop-filter: blur(10px);
+
   .navbar-brand {}
   .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase;
+    color: rgba($white, 0.9);
+    transition: $transition-smooth;
+    position: relative;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 8px;
+
+    &:hover {
+      color: $white;
+      background: rgba($white, 0.1);
+      transform: translateX(10px);
+    }
+
+    &.active {
+      color: $white;
+      background: rgba($white, 0.15);
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 100%;
+        background: $white;
+        border-radius: 0 2px 2px 0;
+      }
+    }
   }
 }
 
@@ -12,38 +44,50 @@
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     flex-direction: column;
-
     width: $sidebar-base-width;
     height: 100vh;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+
     .navbar-brand {
       display: flex;
-
-      margin: auto auto 0;
+      margin: 2rem auto 0;
       padding: 0.5rem;
+
       .img-profile {
         max-width: 10rem;
         max-height: 10rem;
-        border: 0.5rem solid fade-out($white, 0.8);
+        border: 4px solid rgba($white, 0.3);
+        transition: $transition-smooth;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          transform: scale(1.05);
+          border-color: rgba($white, 0.6);
+        }
       }
     }
+
     .navbar-collapse {
       display: flex;
       align-items: flex-start;
       flex-grow: 0;
-
       width: 100%;
-      margin-bottom: auto;
+      margin: 2rem 0 auto;
+      padding: 0 1rem;
+
       .navbar-nav {
         flex-direction: column;
-
         width: 100%;
+
         .nav-item {
           display: block;
+          width: 100%;
+
           .nav-link {
             display: block;
+            text-align: left;
           }
         }
       }

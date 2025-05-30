@@ -8,7 +8,7 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
+$gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
@@ -25,7 +25,15 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-$primary:       $orange !default;
+// Modern color palette
+$primary-blue: #2563eb !default;
+$primary-blue-light: #3b82f6 !default;
+$primary-blue-dark: #1d4ed8 !default;
+$accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !default;
+$modern-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !default;
+$card-shadow: 0 4px 6px rgba(0, 0, 0, 0.07) !default;
+
+$primary:       $primary-blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -35,5 +43,6 @@ $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
 // Page Variables
-
-$sidebar-base-width: 17rem;
+$sidebar-base-width: 18rem;
+$border-radius-modern: 12px;
+$transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

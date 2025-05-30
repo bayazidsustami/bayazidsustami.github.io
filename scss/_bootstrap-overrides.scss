@@ -1,16 +1,65 @@
 .bg-primary {
-  background-color: $primary !important;
+  background: $accent-gradient !important;
 }
 
 .text-primary {
-  color: $primary !important;
+  background: $accent-gradient !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
 }
 
 a {
   color: $primary;
+  text-decoration: none;
+  transition: $transition-smooth;
+
   &:hover,
   &:focus,
   &:active {
-    color: darken($primary, 15%);
+    color: $primary-blue-dark;
+    text-decoration: none;
   }
+}
+
+// Modern navbar styles
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba($white, 0.9);
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba($white, 0.3);
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
+// Enhanced container
+.container-fluid {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent-gradient;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, $primary-blue-dark 0%, $primary 100%);
 }

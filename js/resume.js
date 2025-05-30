@@ -29,6 +29,31 @@
   // Modern enhancements
   $(document).ready(function() {
     
+    // Profile modal functionality
+    $('#profileImage').on('click', function() {
+      $('#profileModal').modal('show');
+    });
+
+    // Add keyboard support for profile image
+    $('#profileImage').on('keypress', function(e) {
+      if (e.which === 13 || e.which === 32) { // Enter or Space key
+        e.preventDefault();
+        $('#profileModal').modal('show');
+      }
+    });
+
+    // Modal enhancement - close on outside click
+    $('#profileModal').on('click', function(e) {
+      if (e.target === this) {
+        $(this).modal('hide');
+      }
+    });
+
+    // Add smooth modal animations
+    $('#profileModal').on('show.bs.modal', function() {
+      $(this).find('.modal-content').addClass('fade-in-up');
+    });
+    
     // Add fade-in animation to sections on scroll
     function animateOnScroll() {
       $('.resume-section').each(function() {

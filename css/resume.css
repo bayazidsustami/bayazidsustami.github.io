@@ -161,6 +161,58 @@ h3 {
   font-size: 1.2rem;
 }
 
+/* Fix for fa-stack icons in social links */
+.list-social-icons a .fa-stack {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-social-icons a .fa-stack .fa-circle {
+  color: rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
+}
+
+.list-social-icons a .fa-stack .fa-inverse {
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.list-social-icons a:hover .fa-stack .fa-circle {
+  color: var(--primary-color);
+}
+
+.list-social-icons a:hover .fa-stack .fa-inverse {
+  color: white;
+}
+
+/* Alternative simple icon style - uncomment if you prefer simpler icons */
+/*
+.list-social-icons a {
+  color: var(--text-secondary);
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.list-social-icons a:hover {
+  color: white;
+  background: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+*/
+
 /* Skills Icons */
 .list-icons {
   font-size: 4rem;
@@ -206,11 +258,17 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
   color: var(--primary-color);
   font-weight: 600;
-  background: rgba(99, 102, 241, 0.1);
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  display: inline-block;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.resume-section .resume-item .resume-date span {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* Portfolio Cards */
@@ -262,6 +320,9 @@ a:hover, a:focus, a:active {
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 

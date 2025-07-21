@@ -1,5 +1,5 @@
 const { src, dest, series, parallel, watch } = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 const header = require('gulp-header');
 const cleanCSS = require('gulp-clean-css');
@@ -129,7 +129,7 @@ const build = series(
   compileSass,
   minifyCss,
   minifyJs,
-  copyVendor()
+  copyVendor
 );
 
 const dev = series(

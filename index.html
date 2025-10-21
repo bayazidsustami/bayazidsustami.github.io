@@ -1,637 +1,1019 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+            name="description"
+            content="Bayazid Sustami M N - Experienced Android Developer with 5+ years of expertise in Kotlin, Java, and modern mobile development"
+        />
+        <meta name="author" content="Bayazid Sustami M N" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bayazid Sustami M N - Experienced Android Developer with 5+ years of expertise in Kotlin, Java, and modern mobile development">
-    <meta name="author" content="Bayazid Sustami M N">
+        <title>Bayazid Sustami M N - Software Engineer</title>
 
-    <title>Bayazid Sustami M N - Software Engineer</title>
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="img/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="img/favicon/safari-pinned-tab.svg"
+            color="#6366f1"
+        />
+        <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#6366f1" />
+        <meta
+            name="msapplication-config"
+            content="img/favicon/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#6366f1" />
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#6366f1">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#6366f1">
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#6366f1">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!--devicons-->
+        <link
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+            rel="stylesheet"
+        />
 
-    <!--devicons-->
-    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+        <!-- Modern fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="vendor/font-awesome/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+        <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet" />
+        <link
+            href="vendor/simple-line-icons/css/simple-line-icons.css"
+            rel="stylesheet"
+        />
 
-    <!-- Modern fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/resume.css" rel="stylesheet" />
+    </head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.css" rel="stylesheet">
-</head>
-
-<body id="page-top">
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Bayazid Sustami</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Bayazid Sustami Profile" id="profileImage" data-toggle="modal" data-target="#profileModal" style="cursor: pointer;">
-        </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#portofolio">Portfolio</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Profile Image Modal -->
-<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content profile-modal-content">
-            <div class="modal-header border-0">
-                <h5 class="modal-title" id="profileModalLabel">Bayazid Sustami Mohammad Nasir</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+    <body id="page-top">
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+            id="sideNav"
+        >
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Bayazid Sustami</span>
+                <span class="d-none d-lg-block">
+                    <img
+                        class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                        src="img/profile.jpg"
+                        alt="Bayazid Sustami Profile"
+                        id="profileImage"
+                        data-toggle="modal"
+                        data-target="#profileModal"
+                        style="cursor: pointer"
+                    />
+                </span>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about"
+                            >About</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#experience"
+                            >Experience</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#education"
+                            >Education</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#skills"
+                            >Skills</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portofolio"
+                            >Portfolio</a
+                        >
+                    </li>
+                </ul>
             </div>
-            <div class="modal-body text-center p-4">
-                <img src="img/profile.jpg" alt="Bayazid Sustami Profile" class="img-fluid profile-modal-image">
-                <div class="mt-3">
-                    <p class="lead mb-2">Software Engineer</p>
-                    <p class="text-muted">Passionate about creating innovative mobile solutions</p>
+        </nav>
+
+        <!-- Profile Image Modal -->
+        <div
+            class="modal fade"
+            id="profileModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="profileModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content profile-modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="profileModalLabel">
+                            Bayazid Sustami Mohammad Nasir
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center p-4">
+                        <img
+                            src="img/profile.jpg"
+                            alt="Bayazid Sustami Profile"
+                            class="img-fluid profile-modal-image"
+                        />
+                        <div class="mt-3">
+                            <p class="lead mb-2">Software Engineer</p>
+                            <p class="text-muted">
+                                Passionate about creating innovative mobile
+                                solutions
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="container-fluid p-0">
+        <div class="container-fluid p-0">
+            <section
+                class="resume-section p-3 p-lg-5 d-flex d-column"
+                id="about"
+            >
+                <div class="my-auto modern-card">
+                    <h1 class="mb-4">
+                        Bayazid
+                        <span class="text-primary">Sustami M N</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        <i class="fa fa-map-marker"></i> Jakarta Selatan, DKI
+                        Jakarta 12740 · <i class="fa fa-phone"></i> (+62)
+                        85399932421 ·
+                        <br class="d-sm-none" />
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:bayazidsustamy@gmail.com"
+                            >bayazidsustamy@gmail.com</a
+                        >
+                    </div>
+                    <p class="lead mb-5">
+                        🚀 <strong>Passionate Android Developer</strong> with
+                        <span class="gradient-text font-weight-bold"
+                            >5+ years</span
+                        >
+                        of expertise crafting high-performance native
+                        applications using <strong>Kotlin</strong> and
+                        <strong>Java</strong>. <br /><br />
+                        I thrive on building
+                        <em>intuitive, scalable, and visually appealing</em>
+                        mobile experiences that users love. My journey extends
+                        beyond Android—I actively explore <strong>iOS</strong>,
+                        <strong>Flutter</strong>, and
+                        <strong>Jetpack Compose</strong> to stay ahead in the
+                        evolving tech landscape. <br /><br />
+                        💡 <strong>Full-Stack Mindset:</strong> I enjoy
+                        expanding into <strong>backend development</strong> and
+                        <strong>DevOps</strong>, enabling me to contribute to
+                        end-to-end solutions that drive seamless user
+                        experiences. <br /><br />
+                        🎯 <strong>Mission:</strong> Committed to innovation and
+                        clean architecture, I love tackling challenges that
+                        bridge the gap between robust functionality and elegant
+                        design.
+                    </p>
+                    <ul class="list-inline list-social-icons mb-0">
+                        <li class="list-inline-item">
+                            <a
+                                href="https://www.facebook.com/amypazzolle/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i
+                                        class="fa fa-facebook fa-stack-1x fa-inverse"
+                                    ></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a
+                                href="https://twitter.com/garfieldzero9/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i
+                                        class="fa fa-twitter fa-stack-1x fa-inverse"
+                                    ></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a
+                                href="https://www.linkedin.com/in/bayazid-sustami-m-n-aab979181/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i
+                                        class="fa fa-linkedin fa-stack-1x fa-inverse"
+                                    ></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a
+                                href="https://github.com/bayazidsustami/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i
+                                        class="fa fa-github fa-stack-1x fa-inverse"
+                                    ></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto modern-card">
-            <h1 class="mb-4">Bayazid
-                <span class="text-primary">Sustami M N</span>
-            </h1>
-            <div class="subheading mb-5">
-                <i class="fa fa-map-marker"></i> Jakarta Selatan, DKI Jakarta 12740 · 
-                <i class="fa fa-phone"></i> (+62) 85399932421 ·
-                <br class="d-sm-none">
-                <i class="fa fa-envelope"></i> <a href="mailto:bayazidsustamy@gmail.com">bayazidsustamy@gmail.com</a>
-            </div>
-            <p class="lead mb-5">
-                🚀 <strong>Passionate Android Developer</strong> with <span class="gradient-text font-weight-bold">5+ years</span> of expertise crafting high-performance native applications using <strong>Kotlin</strong> and <strong>Java</strong>. 
-                <br><br>
-                I thrive on building <em>intuitive, scalable, and visually appealing</em> mobile experiences that users love. My journey extends beyond Android—I actively explore <strong>iOS</strong>, <strong>Flutter</strong>, and <strong>Jetpack Compose</strong> to stay ahead in the evolving tech landscape.
-                <br><br>
-                💡 <strong>Full-Stack Mindset:</strong> I enjoy expanding into <strong>backend development</strong> and <strong>DevOps</strong>, enabling me to contribute to end-to-end solutions that drive seamless user experiences.
-                <br><br>
-                🎯 <strong>Mission:</strong> Committed to innovation and clean architecture, I love tackling challenges that bridge the gap between robust functionality and elegant design.
-            </p>
-            <ul class="list-inline list-social-icons mb-0">
-                <li class="list-inline-item">
-                    <a href="https://www.facebook.com/amypazzolle/" target="_blank" rel="noopener">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://twitter.com/garfieldzero9/" target="_blank" rel="noopener">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/bayazid-sustami-m-n-aab979181/" target="_blank" rel="noopener">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://github.com/bayazidsustami/" target="_blank" rel="noopener">
-                        <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            </ul>
+            <section
+                class="resume-section p-3 p-lg-5 d-flex flex-column"
+                id="experience"
+            >
+                <div class="my-auto">
+                    <h2 class="mb-5">Experience</h2>
+
+                    <div
+                        class="resume-item d-flex flex-column flex-md-row mb-5"
+                    >
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0">PT. ADI Consulting</h3>
+                            <div class="subheading mb-3">Android Developer</div>
+                            <p>
+                                I collaborated with Bank Rakyat Indonesia (BRI)
+                                as an Android Developer, actively contributing
+                                to the development and enhancement of the BRIMO
+                                mobile banking application. My role involved
+                                designing and implementing new features aimed at
+                                improving the user experience and expanding the
+                                app’s functionality. I also created a Proof of
+                                Concept (PoC) for Android Modularization to
+                                enhance the app’s scalability and
+                                maintainability. One of my key achievements was
+                                developing the Tap to Pay feature using NFC
+                                host-based card emulation, enabling seamless
+                                contactless payments within the BRIMO app with a
+                                95% success rate.
+                            </p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary"
+                                >March 2024 - August 2025</span
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="resume-item d-flex flex-column flex-md-row mb-5"
+                    >
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0">
+                                PT. Cerita Untuk Anak Negeri (Octopus Indonesia)
+                            </h3>
+                            <div class="subheading mb-3">
+                                Software Engineer - Mobile
+                            </div>
+                            <p>
+                                In my role, I successfully developed and
+                                integrated both the Collector and Agent Apps,
+                                showcasing my proficiency in app development.
+                                Implementing a robust CI/CD pipeline through
+                                GitHub Actions and Jenkins allowed for
+                                streamlined processes. I actively participated
+                                in a proof-of-concept, merging the Collector and
+                                Agent Apps seamlessly. Additionally, I
+                                spearheaded the adoption of Jetpack Compose in
+                                the Collector App, demonstrating a commitment to
+                                innovative technologies. Taking charge of
+                                release management for both apps showcased my
+                                organizational skills. Lastly, I significantly
+                                enhanced code quality by incorporating unit
+                                tests, contributing to a commendable 70%
+                                increase in code coverage.
+                            </p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary"
+                                >December 2022 - March 2024</span
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="resume-item d-flex flex-column flex-md-row mb-5"
+                    >
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0">PT. Tokopedia</h3>
+                            <div class="subheading mb-3">
+                                Associate Software Engineer - Android
+                            </div>
+                            <p>
+                                During my venture at Tokopedia, I played a
+                                pivotal role in enhancing the app's
+                                functionality by implementing the Flight and
+                                Hotel feature and developing the Entertainment,
+                                TopUp & Bills features. Additionally, I actively
+                                participated in the Android 12 Behavior Changes
+                                workgroup, ensuring the Tokopedia App's
+                                compatibility with Android 12 and above. To
+                                optimize build efficiency, I initiated a Proof
+                                of Concept (POC) for Kotlin Symbol Processor
+                                (KSP) implementation, surpassing the performance
+                                of the old annotation processor for Kotlin
+                                (KAPT). I also contributed significantly to the
+                                collaborative development of Tokopedia Plus, a
+                                subscription program offering customers
+                                exclusive discounts and vouchers, engaging in
+                                cross-team efforts. My expertise was further
+                                showcased as a speaker at DevCamp, reflecting my
+                                commitment to knowledge sharing and professional
+                                growth within the tech community.
+                            </p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary"
+                                >December 2021 - December 2022</span
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="resume-item d-flex flex-column flex-md-row mb-5"
+                    >
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0">CV. Celebes Tech Solution</h3>
+                            <div class="subheading mb-3">Android Developer</div>
+                            <p>
+                                In my role as an Android App Developer, I have
+                                been actively involved in the end-to-end process
+                                of app development, including maintenance and
+                                debugging to ensure optimal performance and
+                                prevent crashes. My responsibilities extended to
+                                managing releases on the Play Store, showcasing
+                                my proficiency in deployment and version
+                                control. Additionally, I actively collaborated
+                                with clients in designing systems and planning
+                                development strategies, showcasing my commitment
+                                to effective communication and partnership
+                                throughout the development lifecycle.
+                            </p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary"
+                                >October 2020 - November 2021</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="resume-item d-flex flex-column flex-md-row">
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0">PT. Jagona Teknologi Nusantara</h3>
+                            <div class="subheading mb-3">Android Developer</div>
+                            <p>
+                                In this role, my primary responsibilities
+                                involve enhancing the Jagona App through the
+                                addition of new features and addressing bugs in
+                                both the Jagona and Jagona Driver Apps. I will
+                                leverage my skills in mobile app development to
+                                seamlessly integrate the app with a web service
+                                using Restful API, ensuring efficient
+                                communication between platforms. Additionally, I
+                                will contribute to the formulation of a
+                                development plan, outlining strategies for the
+                                app's continuous improvement. This opportunity
+                                allows me to play a key role in shaping the
+                                app's future, focusing on innovation and
+                                strategic planning for sustained growth.
+                            </p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary"
+                                >February 2020 - November 2020</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="resume-section p-3 p-lg-5 d-flex flex-column"
+                id="education"
+            >
+                <div class="my-auto">
+                    <h2 class="mb-5">Education</h2>
+
+                    <div
+                        class="resume-item d-flex flex-column flex-md-row mb-5"
+                    >
+                        <div class="resume-content mr-auto">
+                            <h3 class="mb-0">University of Hasanuddin</h3>
+                            <div class="subheading mb-3">
+                                Bachelor of Engineer
+                            </div>
+                            <div>
+                                Informatics Engineer - Parallel Computing Track
+                            </div>
+                            <p>GPA: 3.41</p>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary"
+                                >August 2015 - July 2020</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="resume-section p-3 p-lg-5 d-flex flex-column"
+                id="skills"
+            >
+                <div class="my-auto">
+                    <h2 class="mb-5">Skills</h2>
+
+                    <div class="modern-card">
+                        <div class="subheading mb-3">
+                            Programming Languages &amp; Tools
+                        </div>
+                        <ul class="list-inline list-icons">
+                            <li class="list-inline-item">
+                                <i class="devicon-java-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-kotlin-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-gradle-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-go-original-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-android-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i
+                                    class="devicon-androidstudio-plain-wordmark"
+                                ></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-jenkins-plain"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-firebase-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-git-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-github-original-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-visualstudio-plain"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-html5-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-mysql-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i
+                                    class="devicon-postgresql-plain-wordmark"
+                                ></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="devicon-jira-plain-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i
+                                    class="devicon-amazonwebservices-plain-wordmark"
+                                ></i>
+                            </li>
+                        </ul>
+
+                        <div class="subheading mb-3 mt-5">Workflow</div>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Create app using MVVM with Clean Architecture
+                                Approach
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Go-Lang Backend With MVC Architecture
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Modern Android Development Approach
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                XML and Jetpack Compose as UI Tool for Android
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Continious Integration/Continious Delivery
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Cross Functional Teams
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                Agile Development &amp; Scrum
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="resume-section p-3 p-lg-5 d-flex flex-column"
+                id="portofolio"
+            >
+                <div class="my-auto">
+                    <h2 class="mb-5">Portfolio</h2>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Repeater 247</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                Repeater 247 is an emergency application
+                                consisting of 2 Repeater Applications for
+                                peoples and a Repeater for officers and is
+                                currently being used by the East Luwu District
+                                Government. This Repeater application for the
+                                community has 2 main features, namely making
+                                emergency reports and regular reports. Reports
+                                entered by the public will be entered into the
+                                report list on the officer's application which
+                                will then be followed up by officers through the
+                                application.
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>
+                                In this project I was involved as an android
+                                developer who developed applications for the
+                                people and officers. I was also involved in
+                                designing the system design of the application
+                                as a whole. by officers through the application.
+                            </p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Kotlin, MVVM, Firebase, Retrofit, Git, Android
+                                Studio, XML, CameraX
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=go.id.lutim.repeater247&hl=id"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Repeater for Society</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=go.id.lutim.repeater247petugas&hl=id"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Repeater for Officers</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Siap Boss DPMPTSP Pinrang</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                The ready boss application is a service
+                                application to make it easier for the public to
+                                register online, tracking licensing systems,
+                                obtaining information about licensing, types of
+                                permits and requirements, licensing status,
+                                printing permit documents independently and so
+                                on.
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>
+                                In this project I was involved as an android
+                                developer
+                            </p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Kotlin, MVVM, Firebase, Retrofit, Git, Android
+                                Studio, XML
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=siap.boss.dpmptsppinrang&hl=id"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >SIAP BOSS</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Lasinrang</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                The LASINRANG application is an information
+                                system application that provides information
+                                about fisheries in Pinrang Regency. This
+                                application has a forum feature that allows
+                                users to discuss in the forum and can
+                                communicate with cultivator experts
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>
+                                In this project I was involved as an android
+                                developer.I was also involved in designing the
+                                system.
+                            </p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Kotlin, MVVM, Firebase, Retrofit, Git, XML,
+                                Koin, Room, Android Studio
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=go.id.pinrangkab.lasinrang&hl=id"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Lasinrang App</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=go.id.pinrangkab.lasinrangpakar&hl=it"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Lasinrang Pakar App</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Jelitaku</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                The JELITAKU application is a queuing system
+                                application at the Pinrang district population
+                                and civil registration service. This application
+                                helps the community in the process of civil
+                                registration such as making ID cards to marriage
+                                documents, through the Jelitaku application,
+                                people do not need to queue at the counter. The
+                                civil registration document application process
+                                until the document is published is served
+                                online.
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>
+                                In this project I was involved as an android
+                                developer.I was also involved in designing the
+                                system.
+                            </p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Kotlin, MVVM, Firebase, Retrofit, Git, Android
+                                Studio, XML, Dagger Hilt, Lottie, RxJava
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=go.id.pinrangkab.jelitaku&hl=id"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Jelitaku App</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Tracker-Annotation</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                Tracker-annotation is a tool created using KSP
+                                (kotlin symbolic processor). This tool aims to
+                                make it easier for developers when creating
+                                tracker/analytic functions so that it doesn't
+                                take too much time to create the function.
+                                developers only need to mention what parameters
+                                are needed then this tool will be in charge of
+                                generating code according to the parameters that
+                                have been specified.
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>
+                                Initiator and maintainer of this open source
+                                project.
+                            </p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Kotlin, KSP (Kotlin Symbolic Processor), Kotlin
+                                Poet
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://github.com/bayazidsustami/tracker-annotation"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Tracker-Annotation</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Poke Dex</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                Poke Dex is an open source android project. The
+                                android application built is to display pokemon
+                                characters and their details.
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>
+                                Initiator and maintainer of this open source
+                                project.
+                            </p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Kotlin, MVVM, Room, Dagger Hilt, Jetpack
+                                Compose, Retrofit, XML, Android Studio, Coil
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://github.com/bayazidsustami/PokeDex"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >PokeDex</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Movie App</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                Movie-App is an Android application built to
+                                provide users with a seamless experience in
+                                exploring and discovering movies based on
+                                various genres. It utilizes modern Android
+                                development tools and libraries including
+                                Jetpack Compose for UI, Retrofit for networking,
+                                Coroutine Flow for asynchronous operations, and
+                                more.
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>
+                                Initiator and maintainer of this open source
+                                project.
+                            </p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Kotlin, MVVM, Dagger Hilt, Jetpack Compose,
+                                Retrofit, Android Studio, Coil, Coroutine Flow
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://gitlab.com/bayazid_sustami/movie-app"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Movie App</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">ShopifyX</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                ShopifyX is first project of
+                                OpenIdea-ProjectSprint initiated by
+                                <a href="https://twitter.com/nandapagi"
+                                    >@nandapagi</a
+                                >. This project is mini Backend App that provide
+                                restful api to manage seller and users.
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>Backend Developer</p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Golang, Gofiber, MVC, Postgresql, AWS S3,
+                                Pgxpool, JWT, Validator
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://github.com/bayazidsustami/openidea-shopyfyx"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >ShopifyX</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Social Media</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                SocialMedia is second project of
+                                OpenIdea-ProjectSprint initiated by
+                                <a href="https://twitter.com/nandapagi"
+                                    >@nandapagi</a
+                                >. This project is similar with Instagram or
+                                Twitter, we can add friends, create a post, and
+                                comment a post. This project has been tested
+                                with maximum 600 vus using k6 with avg 1.2req/s
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>Backend Developer</p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Golang, Gofiber, MVC, Postgresql, AWS S3,
+                                Pgxpool, JWT, Validator, prometheus, grafana,
+                                docker
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://github.com/bayazidsustami/openidea-idea-social-media-app"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Social Media</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <h3 class="mb-0">Banking App</h3>
+                        <ul>
+                            <li>Overview</li>
+                            <p>
+                                Banking is third project of
+                                OpenIdea-ProjectSprint initiated by
+                                <a href="https://twitter.com/nandapagi"
+                                    >@nandapagi</a
+                                >. This project is final project of
+                                OpendIdea-ProjectSprint series. This project is
+                                backend app that allow us to topup and transfer
+                                money seamlessly. We have implement auto deploy
+                                using github action into AWS ECS
+                            </p>
+                            <li>Responsibilities</li>
+                            <p>Backend Developer</p>
+                            <li>Tech Stack</li>
+                            <p>
+                                Golang, Gofiber, MVC, Postgresql, AWS S3, AWS
+                                ECS, AWS ECR, Pgxpool, JWT, Validator,
+                                prometheus, grafana, docker
+                            </p>
+                            <li>Project Url</li>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://github.com/lbexp/openidea-banking"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Banking App</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-            <h2 class="mb-5">Experience</h2>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">PT. ADI Consulting</h3>
-                    <div class="subheading mb-3">Android Developer</div>
-                    <p>
-                        I collaborated with Bank Rakyat Indonesia (BRI) as an Android Developer, 
-                        actively contributing to the development and enhancement of the BRIMO mobile banking application. 
-                        My role involved designing and implementing new features aimed at improving the user experience and 
-                        expanding the app’s functionality. 
-                        I also created a Proof of Concept (PoC) for Android Modularization to enhance the app’s scalability and 
-                        maintainability. One of my key achievements was developing the Tap to Pay feature using NFC host-based card emulation, enabling seamless contactless payments within the BRIMO app with a 95% success rate.
-                    </p>
-                </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">March 2024 - Present</span>
-                </div>
-            </div>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">PT. Cerita Untuk Anak Negeri (Octopus Indonesia)</h3>
-                    <div class="subheading mb-3">Software Engineer - Mobile</div>
-                    <p>
-                        In my role, I successfully developed and integrated both the Collector and Agent Apps,
-                        showcasing my proficiency in app development.
-                        Implementing a robust CI/CD pipeline through GitHub Actions and Jenkins allowed for streamlined
-                        processes.
-                        I actively participated in a proof-of-concept, merging the Collector and Agent Apps seamlessly.
-                        Additionally, I spearheaded the adoption of Jetpack Compose in the Collector App, demonstrating
-                        a commitment to innovative technologies. Taking charge of release management for both apps
-                        showcased my organizational skills. Lastly, I significantly enhanced code quality by
-                        incorporating unit tests, contributing to a commendable 70% increase in code coverage.
-                    </p>
-                </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">December 2022 - March 2024</span>
-                </div>
-            </div>
-
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">PT. Tokopedia</h3>
-                    <div class="subheading mb-3">Associate Software Engineer - Android</div>
-                    <p>
-                        During my venture at Tokopedia, I played a pivotal role in enhancing the app's functionality by
-                        implementing the Flight and Hotel feature and developing the Entertainment, TopUp & Bills
-                        features.
-                        Additionally, I actively participated in the Android 12 Behavior Changes workgroup, ensuring the
-                        Tokopedia App's compatibility with Android 12 and above.
-                        To optimize build efficiency, I initiated a Proof of Concept (POC) for Kotlin Symbol Processor
-                        (KSP) implementation, surpassing the performance of the old annotation processor for Kotlin
-                        (KAPT).
-                        I also contributed significantly to the collaborative development of Tokopedia Plus, a
-                        subscription program offering customers exclusive discounts and vouchers, engaging in cross-team
-                        efforts. My expertise was further showcased as a speaker at DevCamp, reflecting my commitment to
-                        knowledge sharing and professional growth within the tech community.
-                    </p>
-                </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">December 2021 - December 2022</span>
-                </div>
-            </div>
-
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">CV. Celebes Tech Solution</h3>
-                    <div class="subheading mb-3">Android Developer</div>
-                    <p>
-                        In my role as an Android App Developer, I have been actively involved in the end-to-end process
-                        of app development, including maintenance and debugging to ensure optimal performance and
-                        prevent crashes. My responsibilities extended to managing releases on the Play Store, showcasing
-                        my proficiency in deployment and version control. Additionally, I actively collaborated with
-                        clients in designing systems and planning development strategies, showcasing my commitment to
-                        effective communication and partnership throughout the development lifecycle.</p>
-                </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">October 2020 - November 2021</span>
-                </div>
-            </div>
-
-            <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">PT. Jagona Teknologi Nusantara</h3>
-                    <div class="subheading mb-3">Android Developer</div>
-                    <p>In this role, my primary responsibilities involve enhancing the Jagona App through the addition
-                        of new features and addressing bugs in both the Jagona and Jagona Driver Apps. I will leverage
-                        my skills in mobile app development to seamlessly integrate the app with a web service using
-                        Restful API, ensuring efficient communication between platforms. Additionally, I will contribute
-                        to the formulation of a development plan, outlining strategies for the app's continuous
-                        improvement. This opportunity allows me to play a key role in shaping the app's future, focusing
-                        on innovation and strategic planning for sustained growth.</p>
-                </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">February 2020 - November 2020</span>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-            <h2 class="mb-5">Education</h2>
-
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                    <h3 class="mb-0">University of Hasanuddin</h3>
-                    <div class="subheading mb-3">Bachelor of Engineer</div>
-                    <div>Informatics Engineer - Parallel Computing Track</div>
-                    <p>GPA: 3.41</p>
-                </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">August 2015 - July 2020</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-            <h2 class="mb-5">Skills</h2>
-
-            <div class="modern-card">
-                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-                <ul class="list-inline list-icons">
-                    <li class="list-inline-item">
-                        <i class="devicon-java-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-kotlin-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-gradle-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-go-original-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-android-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-androidstudio-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-jenkins-plain"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-firebase-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-git-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-github-original-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-visualstudio-plain"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-html5-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-mysql-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-postgresql-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-jira-plain-wordmark"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="devicon-amazonwebservices-plain-wordmark"></i>
-                    </li>
-                </ul>
-
-                <div class="subheading mb-3 mt-5">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Create app using MVVM with Clean Architecture Approach
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Go-Lang Backend With MVC Architecture
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Modern Android Development Approach
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        XML and Jetpack Compose as UI Tool for Android
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Continious Integration/Continious Delivery
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Functional Teams
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Agile Development &amp; Scrum
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portofolio">
-        <div class="my-auto">
-            <h2 class="mb-5">Portfolio</h2>
-            
-            <div class="portfolio-card">
-                <h3 class="mb-0">Repeater 247</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        Repeater 247 is an emergency application consisting of 2 Repeater Applications for peoples and a Repeater for officers and is currently being used by the East Luwu District Government. This Repeater application for the community has 2 main features, namely making emergency reports and regular reports. Reports entered by the public will
-                        be entered into the report list on the officer's application which will then be followed up by officers through the application.
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        In this project I was involved as an android developer who developed applications for the people and officers. I was also involved in designing the system design of the application as a whole.
-                        by officers through the application.
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Kotlin, MVVM, Firebase, Retrofit, Git, Android Studio, XML, CameraX
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://play.google.com/store/apps/details?id=go.id.lutim.repeater247&hl=id" target="_blank" rel="noopener">Repeater for Society</a></li>
-                            <li><a href="https://play.google.com/store/apps/details?id=go.id.lutim.repeater247petugas&hl=id" target="_blank" rel="noopener">Repeater for Officers</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">Siap Boss DPMPTSP Pinrang</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        The ready boss application is a service application to make it easier for the public to register online, tracking licensing systems, obtaining information about licensing, types of permits and requirements, licensing status, printing permit documents independently and so on.
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        In this project I was involved as an android developer
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Kotlin, MVVM, Firebase, Retrofit, Git, Android Studio, XML
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://play.google.com/store/apps/details?id=siap.boss.dpmptsppinrang&hl=id" target="_blank" rel="noopener">SIAP BOSS</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">Lasinrang</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        The LASINRANG application is an information system application that provides information about fisheries in Pinrang Regency. This application has a forum feature that allows users to discuss in the forum and can communicate with cultivator experts
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        In this project I was involved as an android developer.I was also involved in designing the system.
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Kotlin, MVVM, Firebase, Retrofit, Git, XML, Koin, Room, Android Studio
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://play.google.com/store/apps/details?id=go.id.pinrangkab.lasinrang&hl=id" target="_blank" rel="noopener">Lasinrang App</a></li>
-                            <li><a href="https://play.google.com/store/apps/details?id=go.id.pinrangkab.lasinrangpakar&hl=it" target="_blank" rel="noopener">Lasinrang Pakar App</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">Jelitaku</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        The JELITAKU application is a queuing system application at the Pinrang district population and civil registration service. This application helps the community in the process of civil registration such as making ID cards to marriage documents, through the Jelitaku application, people do not need to queue at the counter. The civil registration document application process until the document is published is served online.
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        In this project I was involved as an android developer.I was also
-                        involved in designing the system.
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Kotlin, MVVM, Firebase, Retrofit, Git, Android Studio, XML, Dagger Hilt, Lottie, RxJava
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://play.google.com/store/apps/details?id=go.id.pinrangkab.jelitaku&hl=id" target="_blank" rel="noopener">Jelitaku App</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">Tracker-Annotation</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        Tracker-annotation is a tool created using KSP (kotlin symbolic processor). This tool aims to make it easier for developers when creating tracker/analytic functions so that it doesn't take too much time to create the function. developers only need to mention what parameters are needed then this tool will be in charge of generating code according to the parameters that have been specified.
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        Initiator and maintainer of this open source project.
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Kotlin, KSP (Kotlin Symbolic Processor), Kotlin Poet
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://github.com/bayazidsustami/tracker-annotation" target="_blank" rel="noopener">Tracker-Annotation</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">Poke Dex</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        Poke Dex is an open source android project. The android application built is to display pokemon characters and their details.
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        Initiator and maintainer of this open source project.
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Kotlin, MVVM, Room, Dagger Hilt, Jetpack Compose, Retrofit, XML, Android Studio, Coil
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://github.com/bayazidsustami/PokeDex" target="_blank" rel="noopener">PokeDex</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">Movie App</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        Movie-App is an Android application built to provide users with a seamless experience in exploring and discovering movies based on various genres. It utilizes modern Android development tools and libraries including Jetpack Compose for UI, Retrofit for networking, Coroutine Flow for asynchronous operations, and more.
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        Initiator and maintainer of this open source project.
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Kotlin, MVVM, Dagger Hilt, Jetpack Compose, Retrofit, Android Studio, Coil, Coroutine Flow
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://gitlab.com/bayazid_sustami/movie-app" target="_blank" rel="noopener">Movie App</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">ShopifyX</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        ShopifyX is first project of OpenIdea-ProjectSprint initiated by <a href="https://twitter.com/nandapagi">@nandapagi</a>. 
-                        This project is mini Backend App that provide restful api to manage seller and users.
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        Backend Developer
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Golang, Gofiber, MVC, Postgresql, AWS S3, Pgxpool, JWT, Validator
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://github.com/bayazidsustami/openidea-shopyfyx" target="_blank" rel="noopener">ShopifyX</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">Social Media</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        SocialMedia is second project of OpenIdea-ProjectSprint initiated by <a href="https://twitter.com/nandapagi">@nandapagi</a>. 
-                        This project is similar with Instagram or Twitter, we can add friends, create a post, and comment a post. This project has been tested with maximum 600 vus using k6 with avg 1.2req/s
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        Backend Developer
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Golang, Gofiber, MVC, Postgresql, AWS S3, Pgxpool, JWT, Validator, prometheus, grafana, docker
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://github.com/bayazidsustami/openidea-idea-social-media-app" target="_blank" rel="noopener">Social Media</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="portfolio-card">
-                <h3 class="mb-0">Banking App</h3>
-                <ul>
-                    <li>Overview</li>
-                    <p>
-                        Banking is third project of OpenIdea-ProjectSprint initiated by <a href="https://twitter.com/nandapagi">@nandapagi</a>. 
-                        This project is final project of OpendIdea-ProjectSprint series. This project is backend app that allow us to topup and transfer money seamlessly. 
-                        We have implement auto deploy using github action into AWS ECS 
-                    </p>
-                    <li>Responsibilities</li>
-                    <p>
-                        Backend Developer
-                    </p>
-                    <li>Tech Stack</li>
-                    <p>
-                        Golang, Gofiber, MVC, Postgresql, AWS S3, AWS ECS, AWS ECR, Pgxpool, JWT, Validator, prometheus, grafana, docker
-                    </p>
-                    <li>Project Url</li>
-                    <div>
-                        <ul>
-                            <li><a href="https://github.com/lbexp/openidea-banking" target="_blank" rel="noopener">Banking App</a></li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/resume.js"></script>
-
-</body>
-
+        <!-- Custom scripts for this template -->
+        <script src="js/resume.js"></script>
+    </body>
 </html>
